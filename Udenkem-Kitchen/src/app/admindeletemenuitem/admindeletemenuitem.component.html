@@ -1,0 +1,18 @@
+<strong style="color: green;">{{msg}}</strong><br/>
+<div class="container">
+<div class="d-flex">
+<div class="p-1 flex-grow-1">
+    <h4 class="text-center my-5" style="color:blueviolet;">Udenkem Food Delivery Inc.</h4><hr>
+    <h4 class="text-center my-5"><b>Delete Food Menu Item</b></h4><hr><!-- <input type=button (click)="deletemethod(modelClassName.id)"/> this is anpther flavor of using button click to pass the value to the delete method on component.ts-->
+    <form [formGroup]="deletefooditemRef" (ngSubmit)="deleteFoodMenuItem()">
+        <label class="form-label">Enter Food ID you want to delete</label>
+        <input class="form-control px-5" type="number" formControlName="fid"/><br/>
+        <input class="btn btn-primary px-5 ms-2 mx-2 btn-lg" type="submit" value="Delete Food Item"/>
+    </form>
+</div>
+
+    <div class="align-self-center">
+    <img src="https://logodix.com/logo/435782.jpg" class="img-thumbnail mx-auto d-block" alt="" width="70%" height="80%">
+    </div>
+</div>
+</div>

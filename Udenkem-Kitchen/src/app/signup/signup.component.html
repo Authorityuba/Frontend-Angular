@@ -1,0 +1,23 @@
+<strong>{{msg}}</strong><br/>
+<div class="container">
+<div class="d-flex">
+<div class="p-1 flex-grow-1">
+    <h4 class="text-center my-5" style="color:blueviolet;">Udenkem Food Delivery Inc.</h4><hr>
+    <h4 class="text-center my-5"><b>Create a New Account</b></h4><hr>
+    <form [formGroup]="loginRef" (ngSubmit)="signUp()">
+        <label class="form-label">Email ID</label>
+        <input class="form-control px-2" type="emailid" formControlName="emailid"/><br/>
+        <label class="form-label">Password</label>
+        <input class="form-control" type="password" formControlName="password"/><br/>
+        <label class="form-check-label px-2 ">Type of User</label><br/>
+        <input class="form-check-input px-2 mx-2" type="radio" formControlName="typeofuser" value="admin">Admin <br/>
+        <input class="form-check-input px-2 mx-2 my-2" type="radio" formControlName="typeofuser" value="customer">Customer<br/>
+        <input class="btn btn-primary px-5 ms-2 mx-2 btn-lg" type="submit" value="Sign Up"/>
+    </form><br/>
+    <a routerLink="/login">Already have an account? Sign In!</a>
+</div>
+    <div class="align-self-center vw-50 vh-100">
+        <img src="https://blog.remitly.com/wp-content/uploads/2022/09/different-Nigerian-dishes.jpeg" class="img-thumbnail mx-auto d-block" alt="" width="100%" height="100%" >
+    </div>
+</div>
+</div>

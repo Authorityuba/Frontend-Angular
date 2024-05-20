@@ -1,0 +1,23 @@
+{
+  "routes": [
+    "/admin",
+    "/admin/addfooditem",
+    "/admin/allcustomerorders",
+    "/admin/customer",
+    "/admin/customer/eucharia",
+    "/admin/customer/igbofood",
+    "/admin/customer/ukbabe",
+    "/admin/deletefooditem",
+    "/admin/foodmenu",
+    "/admin/updatefooditem",
+    "/allcustomerorders",
+    "/customer",
+    "/customer/eucharia",
+    "/customer/igbofood",
+    "/customer/ukbabe",
+    "/customer/viewmyorder",
+    "/findcustomerorder",
+    "/login",
+    "/signup"
+  ]
+}

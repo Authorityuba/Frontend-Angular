@@ -1,0 +1,67 @@
+
+
+<div style="text-align: center;">
+    <h2><b>Eucharia Cook's Kitchen</b></h2>
+    <strong style="color: brown;">Please, what would you like for the day?</strong>
+    </div>
+
+    <strong style="color: green;">{{msg}}</strong><br/>
+<div class="container bg-light ">
+<div class="d-flex">
+<div class="flex-grow-1">
+    <h4 class="text-center" style="color:blueviolet;">Pick food and place order here (Fill form)</h4>
+    <form [formGroup]="customerOrderRef" (ngSubmit)="placeOrder()">
+        <div>
+        <input class="form-control" type="number" formControlName="fid" placeholder="Food ID" readonly/>
+        <input class="form-control" type="text" formControlName="cname" placeholder="Customer Name"/>
+        <input class="form-control" type="text" formControlName="contactno" placeholder="Contact No."/>
+        <input class="form-control" type="text" formControlName="location" placeholder="Google map location"/>
+        <input class="form-control" type="number" formControlName="qty" placeholder="Quantity"/>
+        <input class="form-control" type="number" formControlName="price" placeholder="Price (per a plate of food)" readonly/>
+    </div>
+    <div><input class="btn btn-primary px-5 ms-10 mx-2 btn-block" type="submit" value="Place Order"/>
+    </div>
+    </form>
+</div>
+    <div class="align-self-center">
+    <img src="https://scontent.fnic3-1.fna.fbcdn.net/v/t39.30808-6/358410140_1446189142588884_5336075551180851820_n.jpg?stp=c0.23.206.206a_dst-jpg_p206x206&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=19ys8RIs2VAQ7kNvgEed_UI&_nc_ht=scontent.fnic3-1.fna&oh=00_AYCw-pQYXBX4k9bZDTs2nJIflRE-Ilp5Mdaiq1Sp3wR3LA&oe=664A8C49" class="img-thumbnail mx-auto d-block " alt="" width="120%" height="100%" >
+    </div>
+</div>
+</div><hr>
+    
+    <strong  *ngFor="let foodOrderList of foodOrderList"></strong>
+    
+    <div>
+      <div>
+      <div style="margin: 0%;">
+      </div>
+      <Strong class="p-2 mx-auto fs-4"  ><b> Our Food Menu</b></Strong>
+      <table class="table table-striped table-hover " border="2" >
+          <thead style='text-align:center; vertical-align:middle'>
+              <tr >
+                  <th scpoe="">Food ID</th>
+                  <th scpoe="">Food Name</th>
+                  <th scpoe="">Description</th>
+                  <th scope="">Image</th>
+                  <th scpoe="">Price</th>
+                  <th scpoe="">Actions</th>
+              </tr>
+          </thead>
+          <tbody style='text-align:center; vertical-align:middle'>
+              <tr *ngFor=" let euchariafoodlist of euchariafoodlist">
+                  <td>{{euchariafoodlist.fid}}</td>
+                  <td>{{euchariafoodlist.foodname}}</td>
+                  <td>{{euchariafoodlist.description}}</td>
+                  <td><img src={{euchariafoodlist.image}}  width="140px" height="100px"> </td>
+                  <td class="dollar" >{{euchariafoodlist.price}}</td>
+                  <td>
+                    <button type="button" class="btn btn-primary mx-2"  (click)="getOrder(euchariafoodlist)" >Pick Food</button>
+                    <button type="button" class="btn btn-info px-2"  (click)="loadViewFoodOrder()" >Find My Order</button>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+
+      
+    
+    

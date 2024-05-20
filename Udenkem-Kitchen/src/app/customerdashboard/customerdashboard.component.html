@@ -1,0 +1,25 @@
+
+<div>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="https://tse1.mm.bing.net/th?id=OIP.ihmdFUsOYb-UXsWgZMaeMAHaHa&pid=Api&P=0&h=180" alt="" width="35" height="27"></a><a href="login" (click)="logout()"><button class="btn btn-secondary mx-5">Logout</button></a>
+    </div>
+  </nav>
+</div>
+<div>
+    <h6 class="fs-4" style="text-align: center;">Hello!, {{emailid}} </h6>
+    <div class="col-sm text-center mt-1" ><h4 class="fs-4"><b>Welcome to Udenkem Food Delivery Express</b></h4>
+        <b style="color: darkmagenta;"> Eat Healthy Delicious Meals and Grow Freshly Younger!</b>
+    </div>
+</div>    
+<hr>
+<div class="container bg-light text-dark">
+  <div class="row">
+    <div class="  col-sm ">
+      <Strong class="fs-5">Choose your favorite Resturant </Strong>
+      <button class="btn btn-primary px-4 mx-2"><a routerLink="eucharia" style="color: white; text-decoration: none;">Eucharia Kitchen </a></button><button class="btn btn-primary px-4 mx-2"><a routerLink="ukbabe" style="color: white; text-decoration: none;">Uk-Babe Fast-Food Center</a></button><button class="btn btn-primary px-4 mx-2"><a routerLink="igbofood" style="color: white; text-decoration: none;">Igbo Native Diet</a></button>
+  </div>
+</div>
+<hr>
+<router-outlet></router-outlet>
+

@@ -1,0 +1,120 @@
+<h2>Welcome to Eucharia Fast-Food Restaurant</h2>
+<h4>Please, what would you like for the day?</h4>
+<div>
+  <div>
+<div class="card-group container">
+  <div class="row">
+    <div class="col-sm-2 p-0">
+    <div class="card ">
+      <img class="card-img-top" src="https://lh3.googleusercontent.com/-8ELx0ug0NUQ/Xilhw02lG2I/AAAAAAAAYMU/gTHK-FY2NuE6BbYMmguEglTrcQrk9BcQQCLcBGAsYHQ/s1600/1579770182566517-0.png" alt="Egusi Soup">
+        <div class="card-footer">
+        <small class="text-muted">Egusi Soup & Fufu</small>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2 p-0">
+    <div class="card" >
+      <img class="card-img-top" src="https://simshomekitchen.com/wp-content/uploads/2018/07/how-to-make-nigerian-beef-and-chicken-stew-1.jpg" alt="White Rice">
+      <div class="card-footer">
+        <small class="text-muted">White Rice & spicy Stew</small>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2 p-0">
+    <div class="card">
+      <img class="card-img-top" src="http://sisijemimah.com/wp-content/uploads/2015/06/IMG_7971-1399x932.jpg" alt="Jellof Rice">
+      <div class="card-footer">
+        <small class="text-muted">Jeloff Rice & fried Plaintain</small>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2 p-0">
+    <div class="card">
+      <img class="card-img-top" src="https://tse4.mm.bing.net/th?id=OIP.PYN7qCmXqIUDQZoFuztUywHaEK&pid=Api&P=0&h=180" alt="Vegetable Soup" style="height: 148px;">
+      <div class="card-footer">
+        <small class="text-muted">Vegetable Soup & Semo</small>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2 p-0">
+    <div class="card">
+      <img class="card-img-top" src="https://www.hawkcentral.com/gcdn/presto/2023/02/19/PEVC/2de88c8e-a7e2-4824-a38c-cc15ce49ced0-Albasa_Suya_beef.JPG?width=660&height=440&fit=crop&format=pjpg&auto=webp" alt="Roasted Cow Meat">
+      <div class="card-footer">
+        <small class="text-muted">Roasted Cow & Hot Peper</small>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2 p-0">
+    <div class="card">
+      <img class="card-img-top" src="http://www.allnigerianrecipes.com/images/nigerian-isiewu.jpg" alt="Isi Ewu" style="height: 148px;">
+      <div class="card-footer">
+        <small class="text-muted">Isi Ewu Peper Soup</small>
+      </div>
+    </div>
+  </div>
+</div>
+  <div style="margin: 0%;">
+  </div>
+  <Strong class="p-2 mx-auto fs-4"  ><b> Our Food Menu</b></Strong>
+  <table class="table table-striped table-hover">
+      <thead>
+          <tr >
+              <th scpoe="">Food ID</th>
+              <th scpoe="">Food Name</th>
+              <th scpoe="">Description</th>
+              <th scpoe="">Quantity</th>
+              <th scpoe="">Price</th>
+              <th scpoe="">Actions</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                  <button class="btn btn-info " data-bs-toggle="modal" data-bs-target="#exampleModal" value="updateClient" >Place Order</button>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+  
+    
+    <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"> Form</h5>
+        </div>
+        <div class="modal-body">
+            <form >
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Food ID</label>
+                  <input type="text" formControlName="fid" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Food Name</label>
+                  <input type="text" formControlName="fname" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Quantity</label>
+                    <input type="email" formControlName="qty" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Price</label>
+                    <input type="tetx" formControlName="price" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>     
+                           
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal" >Close</button>
+          <button type="button"  class="btn btn-primary" >Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

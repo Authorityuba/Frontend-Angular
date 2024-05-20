@@ -1,0 +1,25 @@
+<strong style="color: green;">{{msg}}</strong><br/>
+<div class="container bg-light ">
+<div class="d-flex">
+<div class="flex-grow-1">
+    <h4 class="text-center my-3" style="color:blueviolet;">Udenkem Food Delivery Inc.</h4><hr>
+    <h4 class="text-center my-5"><b>Add Food Menu Item</b></h4><hr>
+    <form [formGroup]="addfooditemRef" (ngSubmit)="addFoodMenuItem()">
+        <label class="form-label">Food ID</label>
+        <input class="form-control px-2" type="number" formControlName="fid"/><br/>
+        <label class="form-label">Food Name</label>
+        <input class="form-control" type="text" formControlName="foodname"/><br/>
+        <label class="form-label">Description</label>
+        <input class="form-control" type="text" formControlName="description"/><br/>
+        <label class="form-label">Food Image</label>
+        <input class="form-control" type="text" formControlName="image"/><br/>
+        <label class="form-label">Price</label>
+        <input class="form-control" type="text" formControlName="price"/><br/>
+        <input class="btn btn-primary px-5 ms-2 mx-2 btn-lg" type="submit" value="Add Food to Menu"/>
+    </form>
+</div>
+    <div class="align-self-center vh-100">
+    <img src="https://scontent.fnic3-1.fna.fbcdn.net/v/t39.30808-6/438818164_1600406927167104_4539364241213802432_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=cyVpwFHNhTwQ7kNvgHNka-s&_nc_ht=scontent.fnic3-1.fna&oh=00_AfB8iVi6xFGveZTB3vukEcK4Dh2gQSQMXysMlK5JUR_YaA&oe=6638205F" class="img-thumbnail mx-auto d-block" alt="" width="50%" height="30%" >
+    </div>
+</div>
+</div>

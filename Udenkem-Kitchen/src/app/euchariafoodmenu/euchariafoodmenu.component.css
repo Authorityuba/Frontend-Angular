@@ -1,0 +1,7 @@
+td.dollar:before {
+    content: "$";
+  }
+
+  td.dollar::after {
+    content: ".00";
+  }

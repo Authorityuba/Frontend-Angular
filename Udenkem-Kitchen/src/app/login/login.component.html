@@ -1,0 +1,29 @@
+
+
+<strong style="color: red;">{{msg}}</strong><br/>
+<div class="container">
+<div class="d-flex">
+<div class=" flex-grow-1">
+    <h4 class="text-center my-5"></h4><br>
+    <h4 class="text-center my-5 " style="color:blueviolet;">Udenkem Food Delivery Inc.</h4><hr>
+    <h4 class="text-center my-5" style="color: green;"><b>Login</b></h4><hr>
+    <form [formGroup]="loginRef" (ngSubmit)="signIn()">
+        <label class="form-label">Email ID</label>
+        <input class="form-control p-2" type="emailid" formControlName="emailid"/><br/>
+        <label class="form-label">Password</label>
+        <input class="form-control " type="password" formControlName="password"/><br/>
+        <label class="form-check-label p-2">Type of User</label><br>
+        <input class="form-check-input px-2 mx-2" type="radio" formControlName="typeofuser" value="admin">Admin <br />
+        <input class="form-check-input px-2 mx-2 my-2" type="radio" formControlName="typeofuser" value="customer">Customer <br/>
+        <input class="btn btn-primary px-5 mx-2 btn-lg" type="submit" value="Sign In"/>
+    </form><br/>
+    <a routerLink="/signup">Create a new account!</a><br/>
+   
+</div>
+    <div class="align-self-center vw-80 vh-80" >
+     <img src="https://scontent.fnic3-1.fna.fbcdn.net/v/t39.30808-6/358410140_1446189142588884_5336075551180851820_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=19ys8RIs2VAQ7kNvgEed_UI&_nc_ht=scontent.fnic3-1.fna&oh=00_AYAGcQPjq1zS6KK7hCwLXBIbkQTes1z2X480sgwbR8VjRQ&oe=664A8C49" class="img-thumbnail mx-auto d-block" alt="" width="700px">
+    </div>
+</div>
+</div>
+
+

@@ -1,0 +1,123 @@
+<div style="text-align: center;">
+  <h2 style="color: rgb(77, 3, 78);"><b>Uk-Babe Fast Food Center</b></h2>
+  <h1 style="color: brown;">Sorry!, Upcoming - Not Lauch Yet!</h1>
+  </div>
+<div>
+    <div>
+  <div class="card-group container">
+    <div class="row">
+      <div class="col-sm-2 p-0">
+      <div class="card ">
+        <img class="card-img-top" src="https://c7684bdb45.mjedge.net/wp-content/uploads/zikoko/2021/11/images-12-4.jpeg" alt="">
+          <div class="card-footer">
+          <small class="text-muted">My best food</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2 p-0">
+      <div class="card" >
+        <img class="card-img-top" src="https://c7684bdb45.mjedge.net/wp-content/uploads/zikoko/2021/11/images-10-4.jpeg" alt="">
+        <div class="card-footer">
+          <small class="text-muted">Sweat cook and fast</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2 p-0">
+      <div class="card">
+        <img class="card-img-top" src="https://media-cdn.tripadvisor.com/media/photo-s/20/0c/33/a3/tasty-juicy-healthy.jpg" alt="">
+        <div class="card-footer">
+          <small class="text-muted">Healthy Diet</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2 p-0">
+      <div class="card">
+        <img class="card-img-top" src="https://c7684bdb45.mjedge.net/wp-content/uploads/zikoko/2021/11/images-9-6.jpeg" alt="" style="height: 148px;">
+        <div class="card-footer">
+          <small class="text-muted">Tasty Fast Food</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2 p-0">
+      <div class="card">
+        <img class="card-img-top" src="https://scontent.fnic3-1.fna.fbcdn.net/v/t39.30808-6/426323732_1557425224798608_5036827425893653653_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Pf9eqJUjp3UQ7kNvgH1xijI&_nc_ht=scontent.fnic3-1.fna&oh=00_AYAaqculvBjdci8T5AXTbAEexnl-F1ivHE7YglF4Mgjhjw&oe=664768FE" alt="">
+        <div class="card-footer">
+          <small class="text-muted">Fast Yummy Meal</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2 p-0">
+      <div class="card">
+        <img class="card-img-top" src="https://scontent.fnic3-1.fna.fbcdn.net/v/t39.30808-6/423006051_1551118088762655_3732931919362127878_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=3GBOtmevnu8Q7kNvgEkvVr8&_nc_ht=scontent.fnic3-1.fna&oh=00_AYA79q1aDpYc4x6Up2JCBO9gf5IfkizLj5faF8rgUBNJhA&oe=66477613" alt=";">
+        <div class="card-footer">
+          <small class="text-muted">Fast Juicy Meal</small>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div style="margin: 0%;">
+    </div>
+    <Strong class="p-2 mx-auto fs-4"  ><b> Our Food Menu</b></Strong>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr >
+                <th scpoe="">Food ID</th>
+                <th scpoe="">Food Name</th>
+                <th scpoe="">Description</th>
+                <th scpoe="">Quantity</th>
+                <th scpoe="">Price</th>
+                <th scpoe="">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <button class="btn btn-info " data-bs-toggle="modal" data-bs-target="#exampleModal" value="updateClient" ></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+      
+      <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"> Form</h5>
+          </div>
+          <div class="modal-body">
+              <form >
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Food ID</label>
+                    <input type="text" formControlName="fid" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Food Name</label>
+                    <input type="text" formControlName="fname" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Quantity</label>
+                      <input type="email" formControlName="qty" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Price</label>
+                      <input type="tetx" formControlName="price" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>     
+                             
+                </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal" >Close</button>
+            <button type="button"  class="btn btn-primary" >Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  

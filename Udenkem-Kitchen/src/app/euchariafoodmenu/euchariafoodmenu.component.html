@@ -1,0 +1,43 @@
+
+<div style="text-align: center;">
+<h2><b>Eucharia Fast-Food Restaurant</b></h2>
+<strong>Please, what would you like for the day?</strong>
+</div>
+
+<strong  *ngFor="let foodOrderList of foodOrderList"></strong>
+
+<div>
+  <div>
+  <div style="margin: 0%;">
+  </div>
+  <Strong class="p-2 mx-auto fs-4"  ><b> Our Food Menu</b></Strong>
+  <table class="table table-striped table-hover " border="2" >
+      <thead style='text-align:center; vertical-align:middle'>
+          <tr >
+              <th scpoe="">Food ID</th>
+              <th scpoe="">Food Name</th>
+              <th scpoe="">Description</th>
+              <th scope="">Image</th>
+              <th scpoe="">Price</th>
+              <th scpoe="">Actions</th>
+          </tr>
+      </thead>
+      <tbody style='text-align:center; vertical-align:middle'>
+          <tr *ngFor=" let euchariafoodlist of euchariafoodlist">
+              <td>{{euchariafoodlist.fid}}</td>
+              <td>{{euchariafoodlist.foodname}}</td>
+              <td>{{euchariafoodlist.description}}</td>
+              <td><img src={{euchariafoodlist.image}}  width="140px" height="100px"> </td>
+              <td class="dollar" >{{euchariafoodlist.price}}</td>
+              <td>
+                <button type="button" id="openOrderForm" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" (click)="openOrderForm()">Place Order</button>
+                  <button class="btn btn-danger  ms-2"  id="closeOrderForm" value="vieworderdelete" >View your Order</button>
+                  
+              </td>
+          </tr>
+      </tbody>
+  </table>
+  
+   
+  
+
